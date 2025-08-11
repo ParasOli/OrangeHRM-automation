@@ -37,7 +37,7 @@ describe('OrangeHRM', () => {
     cy.get('.oxd-button--secondary').click()
   })
 
-  it.only('PIM', () => {
+  it('PIM', () => {
     const randomUser = `user${Math.floor(Math.random() * 100000)}`
     cy.get(':nth-child(2) > .oxd-main-menu-item').click()
     cy.get('.orangehrm-header-container > .oxd-button').click()
