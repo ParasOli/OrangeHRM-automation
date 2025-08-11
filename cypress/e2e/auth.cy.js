@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 describe('auth', () => {
     const usernameInput = ':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input'
     const passwordInput = ':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input'
