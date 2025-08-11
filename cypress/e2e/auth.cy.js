@@ -21,7 +21,7 @@ describe('auth', () => {
       cy.get(alertText).should('contain', 'Invalid credentials')
     })
 
-    it.only('Logout', () => {
+    it('Logout', () => {
         cy.visit('/')
      cy.get(usernameInput).type('Admin')
     cy.get(passwordInput).type('admin123')
