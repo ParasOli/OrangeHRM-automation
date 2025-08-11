@@ -5,7 +5,7 @@ describe('auth', () => {
     const alertText = '.oxd-alert-content > .oxd-text'
   
     it('Valid Login', () => {
-        cy.visit('/')
+    cy.visit('/')
       cy.get(usernameInput).type('Admin')
       cy.get(passwordInput).type('admin123')
       cy.get(loginButton).click()
